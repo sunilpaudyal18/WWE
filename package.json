@@ -2,7 +2,6 @@
   "name": "traning",
   "private": true,
   "version": "0.0.0",
-  
   "scripts": {
     "build": "vite build",
     "lint": "eslint .",
@@ -10,7 +9,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.17",
     "axios": "^1.10.0",
     "formik": "^2.4.6",
     "react": "^19.1.0",
