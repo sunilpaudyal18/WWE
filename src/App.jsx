@@ -25,7 +25,7 @@ function App() {
         <Route path='/Event' element={<Event />}></Route>
         
       </Routes>
-
+<p>learn react</p>
     </>
   )
 }

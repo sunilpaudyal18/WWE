@@ -1,7 +1,7 @@
 // ... other imports
 import React from 'react'
 import Footer from '../COMPONENTS/Footer.jsx'
-import Banner from '../COMPONENTS/UI/Banner'
+import Banner from '../COMPONENTS/UI/Banner.jsx'
 import Cards from '../COMPONENTS/UI/Cards'
 import GetData from '../../HOC/Custome/GetData'
 import { useNavigate } from 'react-router-dom'
@@ -53,9 +53,11 @@ function Home() {
               <p className="text-white">
                WWE SmackDown is the most viewed television show on Friday nights in the United States...
               </p>
+               <a href="https://www.wwe.com/shows/smackdown" target="_blank" rel="noopener noreferrer">
               <p className="text-white px-8 py-2 mt-4 font-bold text-center transition-all duration-300 bg-red-600 rounded-full shadow-lg hover:bg-red-700">
-              <a href="https://www.wwe.com/shows/smackdown" target="_blank" rel="noopener noreferrer">Learn More</a>
+             Learn More
               </p>
+              </a>
             </div>
           </div>
         
@@ -71,12 +73,12 @@ function Home() {
               <p className="text-white">
                 WWE Raw is an American professional wrestling television program produced by WWE...
               </p>
-              
+              <a href="https://www.wwe.com/shows/raw" target="_blank" rel="noopener noreferrer">
               <p className="text-white px-8 py-2 mt-4 font-bold text-center transition-all duration-300 bg-red-600 rounded-full shadow-lg hover:bg-red-700">
-                <a href="https://www.wwe.com/shows/raw" target="_blank" rel="noopener noreferrer">
                   Learn More
+                  </p>
                 </a>
-              </p>
+              
             </div>
           </div>
    
