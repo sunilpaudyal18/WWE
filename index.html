@@ -11,13 +11,130 @@
     <meta name="apple-mobile-web-app-title" content="WWE Universe" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-    <meta name="description" content="Official WWE Universe Experience - Live Shows, Superstars, Champions, PLE Match Cards, Breaking News and Tickets." />
-    <meta name="keywords" content="WWE, WrestleMania, Raw, SmackDown, NXT, Superstars, Cody Rhodes, Roman Reigns, Rhea Ripley" />
+    <meta name="description" content="Official WWE Universe Web Application & PWA. Explore authentic WWE Superstars, Reign of Champions, live broadcast schedules for Raw and SmackDown, WrestleMania 42 match cards, breaking news, and Performance Center tryouts." />
+    <meta name="keywords" content="WWE, World Wrestling Entertainment, WWE Superstars, Reign of Champions, Cody Rhodes, Roman Reigns, Gunther, Rhea Ripley, WrestleMania 42, Monday Night Raw, Friday Night SmackDown, WWE NXT, WWE Tickets, TKO Group" />
+    <meta name="author" content="WWE Universe Official" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://wwe-universe-app.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wwe-universe-app.vercel.app/" />
+    <meta property="og:title" content="WWE Universe | The Official Home of World Wrestling Entertainment" />
+    <meta property="og:description" content="Experience the official WWE Universe: live Reign of Champions, real superstar profiles, WrestleMania 42 countdown, breaking news, and interactive match predictions." />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/03/WWE_Logo.svg" />
+    <meta property="og:site_name" content="WWE Universe" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@WWE" />
+    <meta name="twitter:creator" content="@WWE" />
+    <meta name="twitter:title" content="WWE Universe | Official Home of World Wrestling Entertainment" />
+    <meta name="twitter:description" content="Explore real WWE superstar combat dossiers, live reign counters, weekly shows, and WrestleMania 42 priority pass reservations." />
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/03/WWE_Logo.svg" />
+
     <title>WWE Universe | The Official Home of World Wrestling Entertainment</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- AEO / Search Engine JSON-LD Structured Data Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SportsOrganization",
+          "@id": "https://wwe-universe-app.vercel.app/#organization",
+          "name": "World Wrestling Entertainment (WWE)",
+          "alternateName": "WWE Universe",
+          "url": "https://wwe-universe-app.vercel.app/",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/0/03/WWE_Logo.svg",
+          "sameAs": [
+            "https://twitter.com/WWE",
+            "https://facebook.com/WWE",
+            "https://instagram.com/WWE",
+            "https://youtube.com/WWE"
+          ],
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "TKO Group Holdings"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "707 Washington Blvd",
+            "addressLocality": "Stamford",
+            "addressRegion": "CT",
+            "postalCode": "06901",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "SportsEvent",
+          "@id": "https://wwe-universe-app.vercel.app/#wrestlemania42",
+          "name": "WWE WrestleMania 42: Las Vegas",
+          "startDate": "2026-04-18T19:00:00-07:00",
+          "endDate": "2026-04-19T23:00:00-07:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Allegiant Stadium",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Las Vegas",
+              "addressRegion": "NV",
+              "addressCountry": "US"
+            }
+          },
+          "organizer": {
+            "@id": "https://wwe-universe-app.vercel.app/#organization"
+          },
+          "description": "The Showcase of the Immortals two-night stadium extravaganza featuring Cody Rhodes, Roman Reigns, Gunther, CM Punk, and Rhea Ripley."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://wwe-universe-app.vercel.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who are the current reigning WWE Champions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Current WWE Champions include Undisputed WWE Champion Cody Rhodes, World Heavyweight Champion Gunther, Women's World Champion Rhea Ripley, WWE Women's Champion Nia Jax, Intercontinental Champion Bron Breakker, and United States Champion LA Knight."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When and where is WrestleMania 42 taking place?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WrestleMania 42 will take place across two blockbuster nights on April 18 and April 19, 2026, live at Allegiant Stadium in Las Vegas, Nevada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can fans watch WWE Monday Night Raw and SmackDown?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Monday Night Raw airs live globally on Netflix and USA Network every Monday at 8/7c PM. Friday Night SmackDown airs live on USA Network every Friday at 8/7c PM."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can athletes apply for WWE Performance Center Tryouts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Athletes, collegiate NCAA contenders, and international combat sports athletes can submit their official highlight video reels, physical measurements, and athletic credentials through the WWE Talent Relations & NIL portal on the website."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-[#08090d] text-zinc-100 font-sans antialiased selection:bg-red-600 selection:text-white min-h-screen overflow-x-hidden">
     <div id="root"></div>

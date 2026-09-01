@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wwe-universe-app.vercel.app/sitemap.xml
