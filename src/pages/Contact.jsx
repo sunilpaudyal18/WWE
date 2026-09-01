@@ -499,16 +499,47 @@ export default function Contact() {
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500 text-black font-extrabold text-xs uppercase rounded-full">
                 <FaCode /> Creator & Lead Engineer
               </div>
-              <h3 className="text-4xl font-heading font-black text-white uppercase mt-2">
-                SUNIL PAUDYAL
+              <h3 className="text-4xl font-heading font-black uppercase mt-2">
+                <a
+                  href={socialLinks.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-amber-400 underline transition-colors"
+                  title="Visit sunilpaudyal.com.np"
+                >
+                  SUNIL PAUDYAL
+                </a>
               </h3>
               <p className="text-xs text-zinc-400 max-w-lg mx-auto">
-                Full-Stack Software Engineer & Digital Architect behind the official WWE Universe Progressive Web Application.
+                Full-Stack Software Engineer & Digital Architect. Visit portfolio at{" "}
+                <a
+                  href={socialLinks.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:text-amber-300 font-bold underline"
+                >
+                  sunilpaudyal.com.np
+                </a>
               </p>
             </div>
 
             {/* Direct Connect Quick Actions */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <a
+                href={socialLinks.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/40 hover:border-amber-400 flex items-center gap-3 transition-all group cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl bg-amber-500 text-black flex items-center justify-center text-lg font-bold">
+                  🌐
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase text-white group-hover:text-amber-400">Personal Website</div>
+                  <div className="text-[11px] text-amber-300 font-medium">sunilpaudyal.com.np</div>
+                </div>
+              </a>
+
               <a
                 href={socialLinks.whatsapp}
                 target="_blank"

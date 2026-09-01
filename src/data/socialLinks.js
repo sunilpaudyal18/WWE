@@ -1,4 +1,6 @@
 const socialLinks = {
+  website: 'https://sunilpaudyal.com.np',
+  portfolio: 'https://sunilpaudyal.com.np',
   linkedin: 'https://www.linkedin.com/in/18sunilpaudyal',
   github: 'https://github.com/sunilpaudyal18/',
   facebook: 'https://www.facebook.com/18.sunilpaudyal',

@@ -9,8 +9,9 @@
 [![PWA Ready](https://img.shields.io/badge/PWA-Installable-e10600?style=for-the-badge&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 [![License](https://img.shields.io/badge/License-MIT-ffd700?style=for-the-badge)](LICENSE)
 
-### 👨‍💻 Built by Sunil Paudyal
+### 👨‍💻 Built by [Sunil Paudyal](https://sunilpaudyal.com.np)
 
+[![Website](https://img.shields.io/badge/Website-sunilpaudyal.com.np-ffd700?style=for-the-badge&logo=google-chrome&logoColor=black)](https://sunilpaudyal.com.np)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/18sunilpaudyal)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sunilpaudyal18/)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/9779867420439)
@@ -197,6 +198,7 @@ Feel free to connect, collaborate, or reach out for inquiries:
 
 | Platform | Profile / Link |
 | :--- | :--- |
+| **Official Website** | [sunilpaudyal.com.np](https://sunilpaudyal.com.np) |
 | **LinkedIn** | [linkedin.com/in/18sunilpaudyal](https://www.linkedin.com/in/18sunilpaudyal) |
 | **GitHub** | [github.com/sunilpaudyal18](https://github.com/sunilpaudyal18/) |
 | **WhatsApp** | [+977 9867420439](https://wa.me/9779867420439) |

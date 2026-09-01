@@ -81,7 +81,15 @@ export default function Footer() {
             {/* Developer Card Banner */}
             <div className="p-4 rounded-2xl bg-zinc-950 border border-red-500/30 space-y-2 max-w-sm">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">
-                <FaCode className="text-red-500" /> Built by Sunil Paudyal
+                <FaCode className="text-red-500" /> Built by{" "}
+                <a
+                  href={socialLinks.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white transition-colors"
+                >
+                  Sunil Paudyal
+                </a>
               </div>
               <p className="text-[11px] text-zinc-300">
                 Crafted with high-performance React 19, Vite, Tailwind CSS, PWA, and real-time live WWE engines.
@@ -89,6 +97,15 @@ export default function Footer() {
               
               {/* Sunil Paudyal Social Links */}
               <div className="flex flex-wrap items-center gap-2 pt-2">
+                <a
+                  href={socialLinks.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-amber-500 text-black hover:bg-amber-400 font-bold transition-all text-xs"
+                  title="Official Website - sunilpaudyal.com.np"
+                >
+                  🌐 Portfolio
+                </a>
                 <a
                   href={socialLinks.linkedin}
                   target="_blank"
@@ -200,6 +217,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs">
               <li>
+                <a href={socialLinks.website} target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 font-bold transition-colors flex items-center gap-1.5 text-amber-300">
+                  🌐 sunilpaudyal.com.np
+                </a>
+              </li>
+              <li>
                 <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
                   <FaLinkedin className="text-blue-500" /> LinkedIn Profile
                 </a>
@@ -224,11 +246,6 @@ export default function Footer() {
                   <FaInstagram className="text-pink-500" /> Instagram (@18.sunilpaudyal)
                 </a>
               </li>
-              <li>
-                <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 transition-colors flex items-center gap-1.5">
-                  <FaTwitter className="text-sky-400" /> X / Twitter Profile
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -239,7 +256,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-zinc-300 font-medium">
             <span>Designed & Built with <FaHeart className="inline text-red-500 mx-1 animate-pulse" /> by</span>
             <a 
-              href={socialLinks.github}
+              href={socialLinks.website}
               target="_blank" 
               rel="noopener noreferrer"
               className="text-amber-400 hover:text-amber-300 font-bold underline transition-colors"

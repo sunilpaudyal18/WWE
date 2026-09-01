@@ -167,13 +167,29 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="p-8 rounded-3xl bg-zinc-900/80 border border-amber-500/40 text-center max-w-2xl mx-auto space-y-4 shadow-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded-full text-xs font-bold uppercase">
-            ⚡ Engineered & Built by Sunil Paudyal
+            ⚡ Engineered & Built by{" "}
+            <a
+              href="https://sunilpaudyal.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-white underline font-extrabold ml-1"
+            >
+              Sunil Paudyal
+            </a>
           </div>
           <h3 className="text-3xl font-heading font-black text-white uppercase">
             POWERING THE NEXT GENERATION OF WWE FANDOM
           </h3>
           <p className="text-xs text-zinc-400 leading-relaxed">
-            Architected with modern Progressive Web App (PWA) standards, zero-lag asset distribution, and real-time live match updates.
+            Architected with modern Progressive Web App (PWA) standards, zero-lag asset distribution, and real-time live match updates. Explore developer portfolio at{" "}
+            <a
+              href="https://sunilpaudyal.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 font-bold underline"
+            >
+              sunilpaudyal.com.np
+            </a>
           </p>
         </div>
       </div>
