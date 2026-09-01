@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141724"/>
+      <stop offset="100%" stop-color="#08090d"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b38700"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a1a"/>
+      <stop offset="100%" stop-color="#a80000"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#e10600" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" stroke="#e10600" stroke-width="12"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="14,10" opacity="0.5"/>
+  <g filter="url(#glow)" transform="translate(68, 80) scale(1.5)">
+    <path d="M15,40 L60,190 L95,65 L125,65 L160,190 L205,40 L235,40 L180,215 L145,215 L110,95 L75,215 L40,215 L-15,40 Z" fill="#ffffff"/>
+    <path d="M5,170 C60,185 170,185 245,150 L250,175 C165,215 55,210 -5,195 Z" fill="url(#redGrad)"/>
+  </g>
+</svg>

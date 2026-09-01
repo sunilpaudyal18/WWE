@@ -1,1 +1,111 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Bebas Neue', 'Oswald', sans-serif;
+    --font-body: 'Outfit', 'Inter', sans-serif;
+    --wwe-red: #e10600;
+    --wwe-gold: #ffd700;
+    --wwe-dark: #08090d;
+    --wwe-card: #11131b;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--wwe-dark);
+    color: #f3f4f6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Bebas Neue', 'Oswald', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  .font-subheading {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom Scrollbar for Sleek Dark Experience */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e10600;
+}
+
+/* WWE Brand & Glow Effects */
+.wwe-glow-red {
+  box-shadow: 0 0 35px -5px rgba(225, 6, 0, 0.45);
+}
+
+.wwe-glow-gold {
+  box-shadow: 0 0 35px -5px rgba(255, 215, 0, 0.35);
+}
+
+.wwe-glow-blue {
+  box-shadow: 0 0 35px -5px rgba(59, 130, 246, 0.4);
+}
+
+.wwe-text-gradient-red {
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b6b 40%, #e10600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wwe-text-gradient-gold {
+  background: linear-gradient(135deg, #fffbeb 0%, #fde047 50%, #ca8a04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wwe-glass {
+  background: rgba(17, 19, 27, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wwe-glass-card {
+  background: linear-gradient(180deg, rgba(28, 32, 46, 0.8) 0%, rgba(14, 16, 23, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Animations */
+@keyframes pulseSlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
