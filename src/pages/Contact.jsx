@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Footer from '../COMPONENTS/Footer'
-import { FaBuilding, FaDumbbell, FaEnvelope, FaTicketAlt, FaFileContract, FaCheckCircle, FaMapMarkerAlt, FaPhoneAlt, FaArrowLeft, FaShieldAlt, FaUserTie } from 'react-icons/fa'
+import socialLinks from '../data/socialLinks'
+import { FaBuilding, FaDumbbell, FaEnvelope, FaTicketAlt, FaFileContract, FaCheckCircle, FaMapMarkerAlt, FaPhoneAlt, FaArrowLeft, FaShieldAlt, FaUserTie, FaLinkedin, FaGithub, FaWhatsapp, FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaCode } from 'react-icons/fa'
 
 export default function Contact() {
   const navigate = useNavigate()
@@ -113,6 +114,16 @@ export default function Contact() {
               }`}
             >
               <FaBuilding /> Global Performance Centers
+            </button>
+            <button
+              onClick={() => { setActiveTab('developer'); setSubmittedContract(null); }}
+              className={`px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2 ${
+                activeTab === 'developer'
+                  ? 'bg-amber-500 text-black font-extrabold shadow-lg shadow-amber-500/20 scale-105'
+                  : 'bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800'
+              }`}
+            >
+              <FaCode /> Built by Sunil Paudyal
             </button>
           </div>
         </div>
@@ -477,6 +488,101 @@ export default function Contact() {
                 <p className="text-xs text-zinc-400 mt-1">10 Lower Thames St, London EC3R 6AF, United Kingdom</p>
                 <p className="text-xs text-zinc-300 mt-2 font-medium">Coordinating international European live stadium tours and European talent scouting.</p>
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Tab 4: Creator & Lead Architect (Sunil Paudyal) */}
+        {activeTab === 'developer' && (
+          <div className="p-8 sm:p-10 rounded-3xl bg-[#0f1118] border border-amber-500/50 shadow-2xl space-y-6 animate-fadeIn">
+            <div className="text-center space-y-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500 text-black font-extrabold text-xs uppercase rounded-full">
+                <FaCode /> Creator & Lead Engineer
+              </div>
+              <h3 className="text-4xl font-heading font-black text-white uppercase mt-2">
+                SUNIL PAUDYAL
+              </h3>
+              <p className="text-xs text-zinc-400 max-w-lg mx-auto">
+                Full-Stack Software Engineer & Digital Architect behind the official WWE Universe Progressive Web Application.
+              </p>
+            </div>
+
+            {/* Direct Connect Quick Actions */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <a
+                href={socialLinks.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl bg-emerald-950/40 border border-emerald-500/40 hover:border-emerald-400 flex items-center gap-3 transition-all group cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg">
+                  <FaWhatsapp />
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase text-white group-hover:text-emerald-400">WhatsApp Direct</div>
+                  <div className="text-[11px] text-zinc-400">+977 9867420439</div>
+                </div>
+              </a>
+
+              <a
+                href={`mailto:${socialLinks.email}`}
+                className="p-4 rounded-2xl bg-red-950/40 border border-red-500/40 hover:border-red-400 flex items-center gap-3 transition-all group cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center text-lg">
+                  <FaEnvelope />
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase text-white group-hover:text-red-400">Direct Email</div>
+                  <div className="text-[11px] text-zinc-400">{socialLinks.email}</div>
+                </div>
+              </a>
+
+              <a
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl bg-blue-950/40 border border-blue-500/40 hover:border-blue-400 flex items-center gap-3 transition-all group cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg">
+                  <FaLinkedin />
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase text-white group-hover:text-blue-400">LinkedIn Profile</div>
+                  <div className="text-[11px] text-zinc-400">/in/18sunilpaudyal</div>
+                </div>
+              </a>
+
+              <a
+                href={socialLinks.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl bg-zinc-900 border border-zinc-700 hover:border-zinc-500 flex items-center gap-3 transition-all group cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl bg-zinc-800 text-white flex items-center justify-center text-lg">
+                  <FaGithub />
+                </div>
+                <div>
+                  <div className="text-xs font-bold uppercase text-white group-hover:text-amber-400">GitHub Repositories</div>
+                  <div className="text-[11px] text-zinc-400">/sunilpaudyal18</div>
+                </div>
+              </a>
+            </div>
+
+            {/* Social Grid */}
+            <div className="p-4 bg-zinc-950 rounded-2xl border border-zinc-800 flex flex-wrap items-center justify-center gap-3">
+              <span className="text-xs font-bold uppercase text-zinc-400 mr-2">Follow Sunil:</span>
+              <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-zinc-900 hover:bg-blue-600 text-zinc-300 hover:text-white rounded-xl text-sm transition-colors" title="Facebook">
+                <FaFacebook />
+              </a>
+              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-zinc-900 hover:bg-pink-600 text-zinc-300 hover:text-white rounded-xl text-sm transition-colors" title="Instagram">
+                <FaInstagram />
+              </a>
+              <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-zinc-900 hover:bg-sky-500 text-zinc-300 hover:text-white rounded-xl text-sm transition-colors" title="X (Twitter)">
+                <FaTwitter />
+              </a>
+              <a href={socialLinks.tiktok} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-zinc-900 hover:bg-rose-600 text-zinc-300 hover:text-white rounded-xl text-sm transition-colors" title="TikTok">
+                <FaTiktok />
+              </a>
             </div>
           </div>
         )}

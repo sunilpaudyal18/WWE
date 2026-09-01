@@ -9,7 +9,16 @@
 [![PWA Ready](https://img.shields.io/badge/PWA-Installable-e10600?style=for-the-badge&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 [![License](https://img.shields.io/badge/License-MIT-ffd700?style=for-the-badge)](LICENSE)
 
-*Created with passion by **[Sunil Paudyal](https://github.com/sunilpaudyal18)***
+### 👨‍💻 Built by Sunil Paudyal
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/18sunilpaudyal)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sunilpaudyal18/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/9779867420439)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sunilpaudyal555@gmail.com)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/18.sunilpaudyal)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/18.sunilpaudyal)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/18sunilpaudyal)
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@18.sunilpaudyal/)
 
 ---
 
@@ -179,6 +188,23 @@ The application is engineered with a mobile-first design philosophy:
 - Touch-friendly icon back buttons with accessible labels.
 - Modal backdrops with swipe-to-dismiss and body scroll locking.
 - Full viewport support for notch and safe area insets on mobile devices.
+
+---
+
+## 👨‍💻 Connect with Sunil Paudyal
+
+Feel free to connect, collaborate, or reach out for inquiries:
+
+| Platform | Profile / Link |
+| :--- | :--- |
+| **LinkedIn** | [linkedin.com/in/18sunilpaudyal](https://www.linkedin.com/in/18sunilpaudyal) |
+| **GitHub** | [github.com/sunilpaudyal18](https://github.com/sunilpaudyal18/) |
+| **WhatsApp** | [+977 9867420439](https://wa.me/9779867420439) |
+| **Email** | [sunilpaudyal555@gmail.com](mailto:sunilpaudyal555@gmail.com) |
+| **Facebook** | [facebook.com/18.sunilpaudyal](https://www.facebook.com/18.sunilpaudyal) |
+| **Instagram** | [@18.sunilpaudyal](https://www.instagram.com/18.sunilpaudyal) |
+| **X (Twitter)** | [@18sunilpaudyal](https://x.com/18sunilpaudyal) |
+| **TikTok** | [@18.sunilpaudyal](https://tiktok.com/@18.sunilpaudyal/) |
 
 ---
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok, FaPaperPlane, FaShieldAlt, FaTv, FaTicketAlt } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope, FaPaperPlane, FaShieldAlt, FaCode, FaHeart } from 'react-icons/fa'
 import WweLogo from './UI/WweLogo'
+import socialLinks from '../data/socialLinks'
 
 export default function Footer() {
   const [email, setEmail] = useState('')
@@ -67,32 +68,98 @@ export default function Footer() {
 
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 lg:gap-12">
-          {/* Col 1: Brand & Identity */}
-          <div className="col-span-2 md:col-span-2">
-            <div className="mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          {/* Col 1: Brand & Developer Attribution */}
+          <div className="lg:col-span-2 space-y-4">
+            <div className="mb-2">
               <WweLogo className="h-10 w-auto" />
             </div>
-            <p className="text-xs text-zinc-400 leading-relaxed mb-6 max-w-sm">
+            <p className="text-xs text-zinc-400 leading-relaxed max-w-sm">
               World Wrestling Entertainment (WWE), a TKO Group Holdings company, is the undisputed global leader in sports entertainment, reaching over 1 billion households worldwide.
             </p>
 
-            <div className="flex items-center gap-3">
-              <a href="https://www.youtube.com/user/WWEFanNation" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-zinc-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors text-zinc-300">
-                <FaYoutube />
-              </a>
-              <a href="https://www.instagram.com/wwe/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-zinc-900 hover:bg-pink-600 hover:text-white flex items-center justify-center transition-colors text-zinc-300">
-                <FaInstagram />
-              </a>
-              <a href="https://www.facebook.com/WWE" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-zinc-900 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors text-zinc-300">
-                <FaFacebook />
-              </a>
-              <a href="https://twitter.com/WWE" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-zinc-900 hover:bg-cyan-500 hover:text-white flex items-center justify-center transition-colors text-zinc-300">
-                <FaTwitter />
-              </a>
-              <a href="https://www.tiktok.com/@wwe" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-zinc-900 hover:bg-rose-500 hover:text-white flex items-center justify-center transition-colors text-zinc-300">
-                <FaTiktok />
-              </a>
+            {/* Developer Card Banner */}
+            <div className="p-4 rounded-2xl bg-zinc-950 border border-red-500/30 space-y-2 max-w-sm">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">
+                <FaCode className="text-red-500" /> Built by Sunil Paudyal
+              </div>
+              <p className="text-[11px] text-zinc-300">
+                Crafted with high-performance React 19, Vite, Tailwind CSS, PWA, and real-time live WWE engines.
+              </p>
+              
+              {/* Sunil Paudyal Social Links */}
+              <div className="flex flex-wrap items-center gap-2 pt-2">
+                <a
+                  href={socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-blue-600 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="LinkedIn - Sunil Paudyal"
+                >
+                  <FaLinkedin />
+                </a>
+                <a
+                  href={socialLinks.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="GitHub - Sunil Paudyal"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href={socialLinks.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-emerald-600 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="WhatsApp - Sunil Paudyal"
+                >
+                  <FaWhatsapp />
+                </a>
+                <a
+                  href={`mailto:${socialLinks.email}`}
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-red-600 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="Email - Sunil Paudyal"
+                >
+                  <FaEnvelope />
+                </a>
+                <a
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-blue-700 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="Facebook - Sunil Paudyal"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-pink-600 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="Instagram - Sunil Paudyal"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href={socialLinks.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-sky-500 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="X (Twitter) - Sunil Paudyal"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  href={socialLinks.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-zinc-900 hover:bg-rose-600 text-zinc-300 hover:text-white transition-all text-xs"
+                  title="TikTok - Sunil Paudyal"
+                >
+                  <FaTiktok />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -118,7 +185,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs">
               <li><Link to="/superstars" className="hover:text-white transition-colors">Superstars Directory</Link></li>
-              <li><Link to="/#champions" className="hover:text-amber-400 transition-colors">Championship Belts</Link></li>
+              <li><Link to="/champions" className="hover:text-amber-400 transition-colors">Reign of Champions</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">News & Match Recaps</Link></li>
               <li><Link to="/contact" className="hover:text-red-400 transition-colors">Performance Center Tryouts</Link></li>
               <li><Link to="/about" className="hover:text-white transition-colors">Attitude & Modern Eras</Link></li>
@@ -129,26 +196,56 @@ export default function Footer() {
           {/* Col 4: Corporate & Legal */}
           <div>
             <h4 className="text-sm font-heading font-black text-white uppercase tracking-wider mb-4 border-b border-zinc-800 pb-1">
-              CORPORATE
+              CONNECT WITH SUNIL
             </h4>
             <ul className="space-y-2.5 text-xs">
-              <li><a href="https://corporate.wwe.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TKO Group Holdings</a></li>
-              <li><a href="https://community.wwe.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WWE Community & Charity</a></li>
-              <li><a href="https://corporate.wwe.com/careers" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Careers & Internships</a></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">Terms of Service</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">Media Credentials</Link></li>
+              <li>
+                <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                  <FaLinkedin className="text-blue-500" /> LinkedIn Profile
+                </a>
+              </li>
+              <li>
+                <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1.5">
+                  <FaGithub /> GitHub Projects
+                </a>
+              </li>
+              <li>
+                <a href={socialLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+                  <FaWhatsapp className="text-emerald-500" /> WhatsApp Direct Chat
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${socialLinks.email}`} className="hover:text-red-400 transition-colors flex items-center gap-1.5">
+                  <FaEnvelope className="text-red-500" /> {socialLinks.email}
+                </a>
+              </li>
+              <li>
+                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                  <FaInstagram className="text-pink-500" /> Instagram (@18.sunilpaudyal)
+                </a>
+              </li>
+              <li>
+                <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 transition-colors flex items-center gap-1.5">
+                  <FaTwitter className="text-sky-400" /> X / Twitter Profile
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Legal Copyright Bar */}
+        {/* Bottom Legal Copyright & Attribution Bar */}
         <div className="mt-12 pt-8 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 gap-4">
           <p>© {new Date().getFullYear()} World Wrestling Entertainment, Inc. All Rights Reserved. A TKO Company.</p>
-          <div className="flex items-center gap-6">
-            <span className="hover:text-zinc-300 cursor-pointer">Cookie Preferences</span>
-            <span className="hover:text-zinc-300 cursor-pointer">Your Privacy Choices</span>
-            <span className="hover:text-zinc-300 cursor-pointer">Security & Protection</span>
+          <div className="flex items-center gap-2 text-zinc-300 font-medium">
+            <span>Designed & Built with <FaHeart className="inline text-red-500 mx-1 animate-pulse" /> by</span>
+            <a 
+              href={socialLinks.github}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 font-bold underline transition-colors"
+            >
+              Sunil Paudyal
+            </a>
           </div>
         </div>
       </div>
