@@ -1,9 +1,9 @@
 {
-  "name": "WWE Universe | The Official Home of World Wrestling Entertainment",
-  "short_name": "WWE Universe",
-  "description": "The Official Progressive Web App of WWE: Superstars, Reign of Champions, Live PLE Hub, Breaking News & Ticket Reservations.",
-  "start_url": "/",
-  "scope": "/",
+  "name": "WWE",
+  "short_name": "WWE",
+  "description": "The Official Progressive Web App of WWE: Superstars, Reign of Champions, Live PLE Hub, Breaking News & Ticket Reservations. Built by Sunil Paudyal.",
+  "start_url": "https://sunil-wwe.vercel.app/",
+  "scope": "https://sunil-wwe.vercel.app/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#08090d",
@@ -26,6 +26,12 @@
   ],
   "shortcuts": [
     {
+      "name": "WWE Champions",
+      "short_name": "Champions",
+      "url": "/champions",
+      "description": "Reign of Champions titleholders and live records"
+    },
+    {
       "name": "Superstars Roster",
       "short_name": "Superstars",
       "url": "/superstars",
@@ -35,19 +41,13 @@
       "name": "Live Shows & PLEs",
       "short_name": "Shows",
       "url": "/event",
-      "description": "WrestleMania, Royal Rumble, and weekly broadcast schedule"
+      "description": "WrestleMania 42, Royal Rumble, and weekly broadcast schedule"
     },
     {
       "name": "Breaking News",
       "short_name": "News",
       "url": "/blog",
       "description": "Latest real-time WWE universe headlines and editorials"
-    },
-    {
-      "name": "Contracts & Tryouts",
-      "short_name": "Contracts",
-      "url": "/contact",
-      "description": "WWE Performance Center NIL Athlete scouting portal"
     }
   ]
 }
